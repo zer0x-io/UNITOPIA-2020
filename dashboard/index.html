@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="msapplication-TileColor" content="#0061da">
+		<meta name="theme-color" content="#1643a3">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Title -->
+		<title>UniTopia</title>
+		<link rel="stylesheet" href="assets/fonts/fonts/font-awesome.min.css">
+
+		<!-- Font Family-->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+		<!-- Dashboard Css -->
+
+		<link href="assets/css/dashboard.css" rel="stylesheet" />
+
+		<!-- c3.js Charts Plugin -->
+		<link href="assets/plugins/charts-c3/c3-chart.css" rel="stylesheet" />
+
+		<!-- Morris.js Charts Plugin -->
+		<link href="assets/plugins/morris/morris.css" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+		<!---Font icons-->
+		<link href="assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+
+		<!--Twitter Opengraph-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@UniDollarToken">
+        <meta name="twitter:creator" content="@UniDollarToken">
+        <meta name="twitter:title" content="UniDollar | Proof of Liquidity and Proof of Stake">
+        <meta name="twitter:description" content="UniDollar is the first Proof of Liquidity and Proof of Stake token.">
+        <meta name="twitter:image" content="https://i.imgur.com/uRadCDW.jpg">
+        <!--Facebook Opengraph-->
+        <meta property="og:url" content="/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="UniDollar | Proof of Liquidity and Proof of Stake" />
+        <meta property="og:description" content="UniDollar is the first Proof of Liquidity and Proof of Stake token." />
+        <meta property="og:image" content="https://i.imgur.com/uRadCDW.jpg" />
+	</head>
+	<body class="">
+		<div id="global-loader" ></div>
+		<div class="page" >
+			<div class="page-main">
+				<div class="header py-1">
+					<div class="container">
+						<div class="d-flex">
+							<a class="header-brand" href="/dashboard">
+								<img src="assets/images/brand/logo01.png" class="header-brand-img" alt="UniDollar">
+							</a>
+							
+							
+								<div class="dropdown d-none d-md-flex mt-1 country-selector">
+									<a href="#" class="d-flex nav-link pr-0 leading-none" data-toggle="dropdown">
+										<span class="avatar avatar-sm mr-1 align-self-center" style="background-image: url(assets/images/us_flag.jpg)"></span>
+										<div>
+											<strong class="text-white">English</strong>
+										</div>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<span class="avatar  mr-3 align-self-center" style="background-image: url(assets/images/french_flag.jpg)"></span>
+											<div>
+												<strong>French</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<span class="avatar  mr-3 align-self-center" style="background-image: url(assets/images/germany_flag.jpg)"></span>
+											<div>
+												<strong>Germany</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<span class="avatar mr-3 align-self-center" style="background-image: url(assets/images/italy_flag.jpg)"></span>
+											<div>
+												<strong>Italy</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<span class="avatar mr-3 align-self-center" style="background-image: url(assets/images/russia_flag.jpg)"></span>
+											<div>
+												<strong>Russia</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<span class="avatar  mr-3 align-self-center" style="background-image: url(assets/images/spain_flag.jpg)"></span>
+											<div>
+												<strong>Spain</strong>
+											</div>
+										</a>
+									</div>
+								</div>
+								
+							<a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+							<span class="header-toggler-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="admin-navbar" id="headerMenuCollapse">
+					<div class="container">
+							<ul class="nav">
+									<li class="nav-item">
+										<a class="nav-link active" href="/dashboard">
+											<i class="fa fa-home"></i>
+											<span> UNIDOLLAR DASHBOARD</span>
+										</a>
+										
+									</li>
+									<li class="nav-item">
+											<a class="nav-link" href="https://unidollar.network/dashboard" target="_blank"><i class="fa fa-pencil-square-o"></i><span>STAKING</span></a>
+											
+												</li>
+									<!--<li class="nav-item with-sub">
+										<a class="nav-link" href="#"><i class="fa fa-bar-chart"></i> <span>Dapps</span></a>
+										<div class="sub-item">
+											<ul>
+		
+												<li>
+													<a href="#">Coming Soon </a>
+												</li>
+												
+											</ul>
+										</div>-->
+										<!-- dropdown-menu -->
+									</li>
+		
+									<li class="nav-item with-sub">
+											<a class="nav-link" href="#"><i class="fa fa-snowflake-o"></i> <span>Social</span></a>
+											<div class="sub-item">
+												<ul>
+													<li>
+														<a href="https://twitter.com/unidollartoken" target="_blank">Twitter</a>
+													</li>
+			
+													<li>
+														<a href="https://reddit.com/r/unidollar" target="_blank">Reddit</a>
+													</li>
+												
+													<li>
+														<a href="https://medium.com/@unidollar" target="_blank">Medium</a>
+													</li>
+													
+												</ul>
+											</div>
+										<!-- dropdown-menu -->
+									</li>
+									<li class="nav-item">
+											<a class="nav-link" href="https://discord.gg/JjEQTdH" target="_blank"><i class="fa fa-pencil-square-o"></i><span>DISCORD</span></a>
+											
+												</li>
+			
+																
+															
+										<li class="nav-item">
+											<a class="nav-link" href="https://t.me/unidollar" target="_blank"><i class="fa fa-pencil-square-o"></i><span>TELEGRAM</span></a>
+																			
+												</li>
+										<li class="nav-item">
+											<a class="nav-link" href="https://uniswap.exchange/swap?outputCurrency=0x256845e721c0c46d54e6afbd4fa3b52cb72353ea" target="_blank"><i class="fa fa-pencil-square-o"></i><span>UNISWAP (v2)</span></a>
+																			
+												</li>
+										<li class="nav-item">
+											<a class="nav-link" href="/flip" target="_blank"><i class="fa fa-pencil-square-o"></i><span>Flip Game</span></a>
+																											
+												</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fa fa-pencil-square-o"></i><span>TBA</span></a>
+																																			
+												</li>
+					</div>
+				</div>
+				<div class="my-3 my-md-5">
+					<div class="container">
+						<div class="page-header">
+							<h4 class="page-title">UNIDOLLAR Dashboard</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">DASHBOARD</a></li>
+								<li class="breadcrumb-item active" aria-current="page">STAKING</li>
+							</ol>
+							<!--<button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil mr-2"></i>Maybe</button>-->
+						</div>
+						<h2>YOU MUST SET SLIPPAGE TO 3% WHEN BUYING ON UNISWAP</h2>
+
+						<div class="row row-cards">
+							<div class="col-sm-12 col-lg-3">
+								<div class="card bg-primary card-img-holder text-white">
+									<div class="card-body">
+										<img src="assets/images/circle.svg" class="card-img-absolute" alt="circle-image">
+										<h4 class="font-weight-normal  mb-3">Total UNIUSD Supply
+											<i class="fa fa-database fs-30 float-right"></i>
+										</h4>
+										<h2 class="mb-0" id="totalSupply">...</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-lg-3">
+								<div class="card bg-warning card-img-holder text-white">
+									<div class="card-body">
+										<img src="assets/images/circle.svg" class="card-img-absolute" alt="circle-image">
+										<h4 class="font-weight-normal  mb-3">Total UNIUSD Staked
+											<i class="fa fa-university fs-30 float-right"></i>
+										</h4>
+										<h2 class="mb-0" id="totalStaked">...</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-lg-3">
+								<div class="card bg-info card-img-holder text-white">
+									<div class="card-body">
+										<img src="assets/images/circle.svg" class="card-img-absolute" alt="circle-image">
+										<h4 class="font-weight-normal mb-3">My UNIUSD Holdings
+											<i class="fa fa-usd fs-30 float-right"></i>
+										</h4>
+										<h2 class="mb-0" id="myTokens">...</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-lg-3">
+								<div class="card bg-success card-img-holder text-white">
+									<div class="card-body">
+										<img src="assets/images/circle.svg" class="card-img-absolute" alt="circle-image">
+										<h4 class="font-weight-normal  mb-3">My Staked UNIUSD
+											<i class="fa fa-lock fs-30 float-right"></i>
+										</h4>
+										<h2 class="mb-0" id="myStaked">...</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row row-deck">
+							<div class="col-lg-8 col-sm-12">
+								<div class="card ">
+									<div class="card-header">
+										<h3 class="card-title">UNIDOLLAR GROWTH CHART</h3>
+									</div>
+									<div class="card-body">
+										<!--<div id="echart1" class="chartsh"></div>-->
+										<script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
+<coingecko-coin-compare-chart-widget  coin-ids="ethereum" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-12">
+									<div class="card">
+											<div class="card-body text-center  pricing bg-primary ">
+												<div class="card-category">MY STAKING REWARDS</div>
+												<div class="display-3 my-4" id="myDividends">...</div>
+												<ul class="list-unstyled leading-loose">
+													<li>Collect your rewards at no charge.</li>
+													
+												</ul>
+												<div class="text-center mt-5">
+													<a href="#" class="btn btn-white btn-block" id="withdraw">WITHDRAW REWARDS</a>
+												</div>
+											</div>
+										</div>
+									</div>
+							
+						
+						<div class="row row-cards">
+							<div class="col-md-12 col-lg-4 col-sm-12">
+								<div class="card  mb-5">
+									<div class="card-header">
+										<div class="card-title">STAKE YOUR UNIDOLLARS</div>
+									</div>
+									<div class="card-body">
+										<div class="form-group">
+											<p>To begin staking, you MUST have at least 20,000 UNIUSD staked. There is no fee to stake. <strong>(STAKE WHOLE NUMBERS ONLY, NO DECIMALS)</strong>
+											</p>
+											
+										</div>
+										<div class="form-group">
+											<label class="form-label">
+											Amount to Stake
+											<button type="button" id="setMaxStake" class="btn btn-outline-primary float-right small">ALL</button>
+											</label>
+											<hr>
+											<input type="number" class="form-control" id="stakeAmount" placeholder="Amount of UNIUSD">
+										</div>
+										
+										
+										<div class="form-footer">
+											<button id="stake" class="btn btn-primary btn-block">STAKE UNIUSD</button>
+										</div>
+										
+									</div>
+									</div>
+							</div>
+							<div class="col-md-12 col-lg-4 col-sm-12">
+									<div class="card  mb-5">
+											<div class="card-header">
+												<div class="card-title">UNSTAKE YOUR UNIDOLLARS</div>
+											</div>
+											<div class="card-body">
+												<div class="form-group">
+													<p>When unstaking your UNIUSD, a 2% tax is charge which is then distributed to all remaining active stakers.
+													</p>
+													
+												</div>
+												<div class="form-group">
+													<label class="form-label">
+													Amount to Unstake
+													<button type="button" id="setMaxUnstake" class="btn btn-outline-primary float-right small">ALL</button>
+													</label>
+													<hr>
+													<input type="number" class="form-control" id="unstakeAmount" placeholder="Amount of UNIUSD">
+												</div>
+												
+												<div class="form-footer">
+													<button id="unstake" class="btn btn-primary btn-block">UNSTAKE UNIUSD</button>
+												</div>
+											</div>
+											</div>
+									</div>
+
+							<div class="col-md-12 col-lg-4 col-sm-12">
+								<div class="card mb-5">
+										<div class="card-header">
+												<div class="card-title">TRANSFER UNIDOLLARS</div>
+											</div>
+											<div class="card-body">
+												<div class="form-group">
+													<label class="form-label">ERC-20 Address</label>
+													<input type="text" class="form-control" id="transferReceiver"  placeholder="0x.....">
+												</div>
+												<div class="form-group">
+													<label class="form-label">
+													Amount
+													
+													</label>
+													<input type="number" class="form-control" id="transferAmount" placeholder="Amount to Transfer">
+												</div>
+												
+												<div class="form-footer">
+													<button id="transfer" class="btn btn-primary btn-block">Transfer</button>
+												</div>
+											</div>
+											
+											</div>
+											</div>
+											
+						</div>
+						
+						</div>
+						</div>
+						</div>
+						<div class="footer">
+								<div class="card-header">
+										<div class="card-title">SETTING SLIPPAGE ON UNISWAP</div>
+									</div>
+								<div class="card-body p-8 align-items-center text-center">
+									<img src="https://i.imgur.com/W7s94Nz.png">
+								</div>
+						</div>
+						
+							
+				
+
+			<!--footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-md-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2020 <a href="#">UniDollar Network</a>. All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+		</div>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Dashboard Core -->
+		<script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/vendors/jquery.sparkline.min.js"></script>
+		<script src="assets/js/vendors/selectize.min.js"></script>
+		<script src="assets/js/vendors/jquery.tablesorter.min.js"></script>
+		<script src="assets/js/vendors/circle-progress.min.js"></script>
+		<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<script src="assets/plugins/echarts/echarts.js"></script>
+		<script src="assets/js/index1.js"></script>
+		<!--Morris.js Charts Plugin -->
+		<script src="assets/plugins/am-chart/amcharts.js"></script>
+		<script src="assets/plugins/am-chart/serial.js"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- Custom Js-->
+		<!--<script src="assets/js/app.js"></script>-->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/web3.js"></script>
+
+		<script src="assets/js/custom.js"></script>
+
+	</body>
+</html>
